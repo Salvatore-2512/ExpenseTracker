@@ -1,0 +1,8 @@
+{
+  "projects": {
+    "default": "expensetracker-ffeca",
+    "staging": "expensetracker-ffeca"
+  },
+  "targets": {},
+  "etags": {}
+}
