@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		C62861CE2DD49DA0000E84C0 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = C62861CD2DD49DA0000E84C0 /* FirebaseFirestore */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		C62861A92DD49931000E84C0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -29,9 +33,38 @@
 		C62861B22DD49931000E84C0 /* ExpenseTrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExpenseTrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		C62861C92DD49BC0000E84C0 /* Exceptions for "ExpenseTracker" folder in "ExpenseTrackerTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				"ExpenseTracker GoogleService Info.plist",
+			);
+			target = C62861A72DD49931000E84C0 /* ExpenseTrackerTests */;
+		};
+		C62861CA2DD49BC0000E84C0 /* Exceptions for "ExpenseTracker" folder in "ExpenseTrackerUITests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				"ExpenseTracker GoogleService Info.plist",
+			);
+			target = C62861B12DD49931000E84C0 /* ExpenseTrackerUITests */;
+		};
+		C62861D02DD49E53000E84C0 /* Exceptions for "ExpenseTracker" folder in "ExpenseTracker" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = C62861992DD4992F000E84C0 /* ExpenseTracker */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		C628619C2DD4992F000E84C0 /* ExpenseTracker */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				C62861D02DD49E53000E84C0 /* Exceptions for "ExpenseTracker" folder in "ExpenseTracker" target */,
+				C62861C92DD49BC0000E84C0 /* Exceptions for "ExpenseTracker" folder in "ExpenseTrackerTests" target */,
+				C62861CA2DD49BC0000E84C0 /* Exceptions for "ExpenseTracker" folder in "ExpenseTrackerUITests" target */,
+			);
 			path = ExpenseTracker;
 			sourceTree = "<group>";
 		};
@@ -52,6 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C62861CE2DD49DA0000E84C0 /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +112,7 @@
 				C628619C2DD4992F000E84C0 /* ExpenseTracker */,
 				C62861AB2DD49931000E84C0 /* ExpenseTrackerTests */,
 				C62861B52DD49931000E84C0 /* ExpenseTrackerUITests */,
+				C62861CC2DD49DA0000E84C0 /* Frameworks */,
 				C628619B2DD4992F000E84C0 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,6 +125,13 @@
 				C62861B22DD49931000E84C0 /* ExpenseTrackerUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		C62861CC2DD49DA0000E84C0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -112,6 +154,7 @@
 			);
 			name = ExpenseTracker;
 			packageProductDependencies = (
+				C62861CD2DD49DA0000E84C0 /* FirebaseFirestore */,
 			);
 			productName = ExpenseTracker;
 			productReference = C628619A2DD4992F000E84C0 /* ExpenseTracker.app */;
@@ -195,6 +238,9 @@
 			);
 			mainGroup = C62861912DD4992F000E84C0;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				C62861CB2DD49D2E000E84C0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = C628619B2DD4992F000E84C0 /* Products */;
 			projectDirPath = "";
@@ -397,6 +443,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ExpenseTracker/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -436,6 +483,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ExpenseTracker/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -593,6 +641,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C62861CB2DD49D2E000E84C0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.12.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C62861CD2DD49DA0000E84C0 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C62861CB2DD49D2E000E84C0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C62861922DD4992F000E84C0 /* Project object */;
 }
